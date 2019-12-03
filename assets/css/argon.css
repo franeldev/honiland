@@ -17452,6 +17452,10 @@ a.text-success:focus
 {
     color: #1f8f5f !important;
 }
+.fa.fa-arrow-up.font-weight-bolder, .num-bold
+{
+  text-shadow: .5px .9px .6px #556b2f, 2px 4px 3px rgba(0,0,0,0.3), 2px 4px 3px rgba(255,255,255,.5);
+}
 
 .text-info
 {
