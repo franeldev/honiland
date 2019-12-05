@@ -17451,7 +17451,7 @@ a.text-success:hover,
 a.text-success:focus
 {
     color: #1f8f5f !important;
-}
+} 
 .fa.fa-arrow-up.font-weight-bolder, .num-bold
 {
   text-shadow: .5px .9px .6px #556b2f, 2px 4px 3px rgba(0,0,0,0.3), 2px 4px 3px rgba(255,255,255,.5);
@@ -29638,4 +29638,68 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 .swal2-popup .swal2-image
 {
     max-width: 200px;
+}
+@media (max-width: 461px)
+{
+    .btn.btn-neutral.btn-sm.mb-2
+    {
+        margin-right: 0;
+    }
+}
+@media (max-width: 991px)
+{
+    footer .col-lg-6
+    {
+        order: 2;
+    }
+    footer .col-lg-6.second
+    {
+        order: 1;
+    }
+}
+
+.btn-link {
+    color: #5e72e4 !important;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 .5px 1px rgba(50, 50, 93, .1), 0 1px 2px rgba(0, 0, 0, .08);
+}
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08) !important;
+}
+#content, #material, #source
+{
+    max-height: 14.85rem;
+    overflow: hidden;
+
+    /*Set transitions up. */
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+#material
+{
+    max-height: 15.2rem;
+}
+#source
+{
+    max-height: 13.2rem;
+}
+#content.open, #material.widen, #source.display
+{
+    max-height: 100%;
+
+    /*Set transitions up. */
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#view-more, #material-more, #display-more
+{
+    text-transform: uppercase;
+    cursor: pointer;
 }
