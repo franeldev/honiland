@@ -29657,6 +29657,13 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
         order: 1;
     }
 }
+@media (max-width: 576px)
+{
+    .col-lg-6.float-left
+    {
+        height: 400px !important;
+    }
+}
 
 .btn-link {
     color: #5e72e4 !important;
@@ -29672,8 +29679,9 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 }
 #content, #material, #source
 {
-    max-height: 14.85rem;
+    max-height: 38.85rem;
     overflow: hidden;
+    text-overflow: wrap;
 
     /*Set transitions up. */
     -webkit-transition: max-height 0.7s;
@@ -29682,11 +29690,15 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
 }
 #material
 {
-    max-height: 15.2rem;
+    max-height: 35.2rem;
 }
 #source
 {
-    max-height: 13.2rem;
+    max-height: 78.2rem;
+}
+.col-lg-6.float-left
+{
+    height: 500px;
 }
 #content.open, #material.widen, #source.display
 {
